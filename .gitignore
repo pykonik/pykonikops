@@ -1,2 +1,4 @@
 *.retry
 .idea
+secret*.yml
+!secret-example.yml

@@ -1,7 +1,3 @@
-
-- name: Include db variables
-  include_vars: group_vars/secret.yml
-
 - name: Start and enable postgres
   service: name=postgresql enabled=yes state=started
   become: yes

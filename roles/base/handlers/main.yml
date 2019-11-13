@@ -9,7 +9,7 @@
 - name: install requirements
   pip:
     requirements: "{{ app_dir }}/requirements.txt"
-    virtualenv: '{{venv_dir}}'
+    virtualenv: '{{ venv_dir }}'
     virtualenv_python: python3.6
 
 - name: collectstatic
@@ -31,5 +31,5 @@
 - name: reread supervisor
   become: yes
   supervisorctl:
-    name: "{{app_name}}"
+    name: "{{ app_name }}"
     state: present

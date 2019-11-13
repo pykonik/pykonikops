@@ -4,8 +4,6 @@ POSTGRES_PASSWORD={{ db_password }}
 DJANGO_SETTINGS_MODULE={{ django_settings_module }}
 SECRET_KEY={{ django_secret_key }}
 
-DJANGO_SETTINGS_MODULE={{ django_settings_module }}
-
 # Django Configuration
 DEBUG={{ django_debug }}
 ADMIN_EMAIL= {{ admin_email }}
@@ -14,7 +12,6 @@ DB_ENGINE={{ db_engine }}
 DB_URL={{ db_url }}
 
 ALLOWED_HOSTS={{ allowed_hosts }}
-SECRET_KEY={{ django_secret_key }}
 EMAIL_BACKEND={{ email_backend }}
 EMAIL_HOST={{ email_host }}
 EMAIL_PORT={{ email_port }}
@@ -27,6 +24,7 @@ MEDIA_STORAGE_BACKEND= {{ media_storage_backend }}  # examples: local, s3
 
 # Group setup
 
+MEETUP_NAME={{ meetup_name }}
 GROUP_NAME={{ group_name }}
 GROUP_PAGE_ADDRESS_SHORT={{ group_page_address_short }}
 GROUP_PAGE_ADDRESS_LONG={{ group_page_address_long }}

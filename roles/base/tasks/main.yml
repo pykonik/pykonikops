@@ -24,7 +24,7 @@
 
 - name: Creates virtualenvs directory
   file:
-    path: /home/{{deployer_user}}/.virtualenvs
+    path: /home/{{ deployer_user }}/.virtualenvs
     state: directory
     owner: "{{ deployer_user }}"
 
