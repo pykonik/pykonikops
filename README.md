@@ -1,3 +1,4 @@
+# Ansible provisioning and deployment for [meetpy](https://github.com/meetpy/meetpy)
 To successfully setup new python meetup website you need:
 1. Fill in group_vars/secret.yml and group_vars/secret.yml.
 2. In file hosts replace `#ip address` with ip of your server
