@@ -1,0 +1,9 @@
+- name: Apply common configuration to server
+  hosts: hosting
+  user: "{{ deployer_user }}"
+  vars_files:
+    - "group_vars/secret.yml"
+  roles:
+    - nginx
+    - postgres
+    - app
