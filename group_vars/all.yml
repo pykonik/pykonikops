@@ -1,7 +1,7 @@
 app_name: meetpy
 
-deployer_user: vagrant
-deployer_group: vagrant
+deployer_user: deployer
+deployer_group: deployer
 
 code_repository_url: "https://github.com/meetpy/meetpy/"
 repo_name: "{{ app_name }}"
