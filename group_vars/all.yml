@@ -6,7 +6,7 @@ deployer_group: deployer
 code_repository_url: "https://github.com/meetpy/meetpy/"
 repo_name: "{{ app_name }}"
 branch_name: "master"
-ssh_dir: ~/.ssh/id_rsa.pub
+ssh_pubkey_file: ~/.ssh/id_rsa.pub
 
 # virtualenv
 venv_dir: '/home/{{ deployer_user }}/.virtualenvs/{{ app_name }}'
