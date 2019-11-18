@@ -1,0 +1,26 @@
+app_name: meetpy
+
+deployer_user: deployer
+deployer_group: deployer
+
+code_repository_url: "https://github.com/meetpy/meetpy/"
+repo_name: "{{ app_name }}"
+branch_name: "master"
+ssh_pubkey_file: ~/.ssh/id_rsa.pub
+
+# virtualenv
+venv_dir: '/home/{{ deployer_user }}/.virtualenvs/{{ app_name }}'
+venv_python: '{{ venv_dir }}/bin/python'
+
+repo_dir: "/home/{{deployer_user}}/{{ repo_name }}"
+app_dir: "{{ repo_dir }}/meetpy"
+static_dir: "/home/{{ deployer_user }}/static"
+media_dir: "{{ app_dir }}"
+requirements_file: "{{ repo_dir }}/requirements.txt"
+log_dir: "/var/log/gunicorn"
+
+# Http server details
+wsgi_server_port: 8000
+
+django_wsgi_module: "{{app_name}}.wsgi"
+django_settings_module: "{{ app_name }}.settings.production"
